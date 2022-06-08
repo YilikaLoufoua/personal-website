@@ -1,6 +1,15 @@
 const scrollOffset = 200;
 
 const scrollElements = document.querySelectorAll(".js-scroll");
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const rootElement = document.documentElement;
+
+function scrollToTop() {
+    rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+}
 
 const elementInView = (el, offset) => {
     const elementTop = el.getBoundingClientRect().top;
@@ -29,3 +38,6 @@ const handleScrollAnimation = () => {
 window.addEventListener("scroll", () => {
     handleScrollAnimation();
 });
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
