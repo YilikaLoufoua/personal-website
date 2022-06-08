@@ -17,7 +17,7 @@ p {
 }
 
 .section {
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -131,7 +131,7 @@ p {
     color: rgb(255, 255, 255, 0.95);}
 
 #contact h1 {
-    padding-bottom: 2rem;
+    padding: 2rem;
     color: rgb(255, 255, 255, 0.95);
 }
 
