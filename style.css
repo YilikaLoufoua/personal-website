@@ -183,7 +183,11 @@ a p {
 
 #google_translate_element {
     position: absolute;
-    right: 5px;
+    right: 15px;
+}
+
+#google_translate_element .goog-te-menu-value{
+    font-size: 12px;
 }
 
 /* Animation classes */
