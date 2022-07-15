@@ -6,6 +6,7 @@ body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -16,13 +17,25 @@ p {
     font-size: 24px;
 }
 
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a h3 {
+    color: rgb(13, 82, 157);
+}
+
+a p {
+    font-size: 1rem;
+}
 .section {
     padding: 2rem;
     text-align: center;
 }
 
 #nav-bar {
-    height: 6rem;
+    height: 4rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -31,7 +44,7 @@ p {
 
 #nav-bar a {
     text-decoration: none;
-    font-size: x-large;
+    font-size: large;
     color: gray;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -47,7 +60,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgba(65, 116, 187, 0.205);
+    background-image: linear-gradient(rgba(65, 116, 187, 0.068), white);
     font-size: 24px;
 }
 
@@ -78,7 +91,7 @@ p {
 }
 
 #about p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #skills {
@@ -89,7 +102,7 @@ p {
 }
 
 #skills p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #skills .skills-list {
@@ -102,43 +115,60 @@ p {
 }
 
 #project-list {
-    gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 5fr);
-    justify-items: center;
-    margin-bottom: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#project-list .project-card {
-    border: solid 1px rgb(0, 0, 0, 0.2);
-    padding: 10px 0 30px;
-    background-color: rgb(0, 0, 0, 0.02);
-    border-radius: 20px;
-    width: 80%; 
+
+.card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 0.1px solid rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    margin: 10px;
+    width: 320px;
+    min-height: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.10);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+
+.card-description {
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
 #project-list h4 {
     color: gray;
 }
 
-#project-list a {
-    font-size: 20px;
-    text-decoration: none;
-}
 
 #contact {
-    background-color: rgba(69, 141, 218, 0.8);
-    color: rgb(255, 255, 255, 0.95);}
+    margin-top: 3rem;
+    background-image: linear-gradient(rgb(13, 82, 157, 0.85), rgb(13, 82, 157, 0.9), rgb(13, 82, 157));
+    color: rgb(255, 255, 255, 0.95);
+}
 
 #contact h1 {
     padding: 2rem;
+    font-size: 20px;
     color: rgb(255, 255, 255, 0.95);
 }
 
 #contact p {
     margin: 3rem;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #social-media-icons a {
@@ -149,6 +179,11 @@ p {
     border: none;
     color: white;
     cursor: pointer;
+}
+
+#google_translate_element {
+    position: absolute;
+    right: 5px;
 }
 
 /* Animation classes */

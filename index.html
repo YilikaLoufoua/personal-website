@@ -1,100 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Personal Website</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
     </head>
+
     <body>
         <div id="nav-bar">
-            <a href="#about" class="nav-bar-item">About</a>
-            <a href="#skills" class="nav-bar-item">Skills</a>
-            <a href="#portfolio" class="nav-bar-item">Portfolio</a>
-            <a href="#contact" class="nav-bar-item">Contact Me</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+            <div id="google_translate_element"></div>
         </div>
         <div id="header" class="section">
             <div class="info">
-                <h1>Yilika Loufoua</h1>
+                <h1>Yilika Loufoua | 伊力加</h1>
                 <p>Software Developer | Aspiring Educator </p>
             </div>
             <img src="images/headshot.jpg" alt="headshot" />
         </div>
         <div id="about" class="section js-scroll">
             <h1>About</h1>
-            <p>
-                I am a Computer Science student at TCU whose interests lie in Machine Learning,
-                Mobile/Web Development, and Technical Education.
+            <p>I am a Taiwanese-born Computer Science student at Texas Christian University. My interests lie in Web
+                Development,
+                Machine Learning, Mobile application develpoment, and Technical Education.
             </p>
-            <p
-                >My mission is to attain expertise in the field of information and technology, then
-                ultimately create accessible technical education programs to uplift youth talent
-                from underserved communities, particularly those from underepresented backgrounds in
-                tech.
+            <p>My mission is to first accumulate expertise in the field of software engineering, then to bring
+                about technical education courses that are approachable by the general public and can provide access to
+                the necessary resources, opportunities, and guidance for any person in the world to be able to become a
+                software engineer.
             </p>
         </div>
         <div id="skills" class="section js-scroll">
             <h1>Skills</h1>
-            <p>
-                Below is a comprehensive list of technologies, frameworks, and languages I've worked
-                with throughout college, personal projects, and working experiences:
+            <p>Below is a list of technologies, frameworks, and languages I've worked
+                with during college courses and working experiences:
             </p>
             <div class="skills-list">
-                <p> Programming Languages: Python, Java, MATLAB, Swift, Javascript, C </p>
-                <p> Deployment: Heroku, Tomcat, Surge </p>
-                <p> Database: MySQL, Parse, MongoDB, Hbase </p>
-                <p> Mobile Development: iOS (Swift), Android (Java) </p>
-                <p>
-                    Machine Learning: Scikit-Learn, PyTorch, TensorFlow, MATLAB Deep Learning
-                    Toolbox
-                </p>
-                <p>
-                    Web Development: HTML, CSS, Javascript, React.js, Node.js, Express.js, Vue.js,
-                    Spring Boot
-                </p>
+                <p>Programming Languages: Javascript, Python, Java, Swift, C, MATLAB</p>
+                <p>Machine Learning: RStudio, Scikit-Learn, PyTorch, TensorFlow, MATLAB Deep Learning Toolbox</p>
+                <p>Web Development: HTML, CSS, Javascript, React.js, Node.js, Express.js, Vue.js, Spring Boot</p>
+                <p>Mobile Development: iOS (Swift), Android (Java)</p>
+                <p>Database: MySQL, Parse, MongoDB, Hbase</p>
+                <p>Deployment: Heroku, Tomcat, Surge</p>
             </div>
         </div>
         <div id="portfolio" class="section js-scroll">
             <h1>Portfolio</h1>
             <div id="project-list">
-                <div class="project-card">
-                    <h4>Web Development</h4>
-                    <a href="https://github.com/YilikaLoufoua/star-wars-wiki">Star Wars Wiki</a>
+                <div class="card">
+                    <a href="https://yilikaloufoua.github.io/personal-website">
+                        <h5>Web Development</h5>
+                        <h3>Personal Website</h3>
+                        <div>
+                            <p>Click here to learn<br>the meaning of recursion</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="project-card">
-                    <h4>Machine Learning</h4>
-                    <a href="https://github.com/YilikaLoufoua/noise-suppression"
-                        >Deep Learning for Noise Suppression</a
-                    >
+                <div class="card">
+                    <a href="https://github.com/YilikaLoufoua/noise-suppression">
+                        <h5>Machine Learning</h5>
+                        <h3>Deep Learning Audio Noise Suppression</h3>
+                        <p>Work project assigned by MathWorks during MLH Fellowship to perform speech
+                            background noise
+                            suppression using the MATLAB Deep
+                            Learning ToolBox</p>
+                    </a>
                 </div>
-                <div class="project-card">
-                    <h4>iOS Development</h4>
-                    <a href="https://github.com/YilikaLoufoua/Twitter-Tech-Fellow">Twitter Clone</a>
+                <div class="card">
+                    <a href="https://github.com/YilikaLoufoua/feedback-analyzer">
+                        <h5>Machine Learning / Web Development</h5>
+                        <h3>Feedback Analyzer</h3>
+                        <p>NLP application that classifies text-based data from surveys by both topic
+                            and sentiment for comparative qualitative data analysis, built with React
+                            and TensorFlow</p>
+                    </a>
                 </div>
-                <div class="project-card">
-                    <h4>Android Development</h4>
-                    <a href="https://github.com/SmartCalendar/SmartCalendar">Smart Calendar</a>
+                <div class="card">
+                    <a href="https://github.com/SmartCalendar/SmartCalendar">
+                        <h5>Machine Learning / Android </h5>
+                        <h3>Smart Calendar</h3>
+                        <p>OCR and NLP calendar Android application that allows users to take pictures of posters
+                            to automatically extract texts and input events into
+                            their calendar</p>
+                    </a>
                 </div>
+                <div class="card">
+                    <a href="https://yilika-student-store.surge.sh">
+                        <h5>Web Development</h5>
+                        <h3>CodePath Shop</h3>
+                        <p>A store website that allows users to view products, add products to
+                            their shopping cart, and checkout</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://yilikaloufoua.github.io/site-flixster">
+                        <h5>Web Development</h5>
+                        <h3 translate="no">Flixster</h3>
+                        <p>A movie website that allows users to view a list of movies currently playing in theaters and
+                            search for movies, built with the The Movie
+                            Database API, HTML,
+                            CSS, and JavaScript</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://yilikaloufoua.github.io/star-wars-wiki">
+                        <h5>Web Development</h5>
+                        <h3>Star Wars Wiki</h3>
+                        <p>Star Wars Wiki website built with Vue and SWAPI, the Star Wars API</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/YilikaLoufoua/banking-application">
+                        <h5>Web Development</h5>
+                        <h3>Bank of CodePath</h3>
+                        <p>A banking application that allows users to document their transactions and transfers, built
+                            with React and Express</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/YilikaLoufoua/report-card-generator">
+                        <h5>Web Development</h5>
+                        <h3>Report Card Generator</h3>
+                        <p>A generator application that allows users to generate report cards from course grade data,
+                            built with React</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/YilikaLoufoua/hogwartsartifacts">
+                        <h5>Web Development</h5>
+                        <h3>Hogwarts Inventory Database</h3>
+                        <p> Hogwarts artifacts inventory management application with backend built using Spring Boot</p>
+                </div>
+                <a href="https://github.com/YilikaLoufoua/user-management-heroku">
+                    <div class="card">
+                        <h5>Web Development</h5>
+                        <h3>User Database</h3>
+                        <p>User database management application built with HTML, CSS, and Javascript</p>
+                </a>
             </div>
+            <div class="card">
+                <a href="https://github.com/YilikaLoufoua/Parstagram-Tech-Fellow">
+                    <h5>iOS Development</h5>
+                    <h3>Instagram</h3>
+                    <p>Instagram clone application that allows users to sign up, sign
+                        in,
+                        create
+                        posts, view a global posts feed, and comment on posts, built with a custom Parse database
+                    </p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/YilikaLoufoua/Twitter-Tech-Fellow">
+                    <h5>iOS Development</h5>
+                    <h3>Twitter</h3>
+                    <p> Twitter clone application that allows users to sign in with their Twitter account to
+                        synchronously view,
+                        compose, favorite, and retweet tweets, built with the Twitter API</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/SmartCalendar/SmartCalendar">
+                    <h5>iOS Development</h5>
+                    <h3 translate="no">Yelp</h3>
+                    <p>Yelp clone application that can display a list of current popular restaurants, built with the
+                        Yelp
+                        Search
+                        API</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/YilikaLoufoua/Flixster">
+                    <h5>iOS Development</h5>
+                    <h3 translate="no">Flixster</h3>
+                    <p> iOS application that can display the movies currently playing in theaters, built with The
+                        Movie Database API</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/YilikaLoufoua/SimpleTipCalculator">
+                    <h5>iOS Development</h5>
+                    <h3>Tip Calculator</h3>
+                    <p> Tip calculator iOS application</p>
+                </a>
+            </div>
+        </div>
         </div>
         <div id="contact" class="section">
             <h1>Contact Me</h1>
             <div id="social-media-icons">
-                <a href="https://github.com/YilikaLoufoua"
-                    ><img src="images/GitHub-Mark.png" height="25"
-                /></a>
-                <a href="https://www.linkedin.com/in/yilika-loufoua/"
-                    ><img src="images/linkedin-3-xxl.png" height="20"
-                /></a>
-                <a href="#facebook"><img src="images/facebook.png" height="20" /></a>
-                <a href="#twitter"><img src="images/twitter.png" height="20" /></a>
-                <a href="#instagram"><img src="images/instagram.png" height="20" /></a>
+                <a href="https://github.com/YilikaLoufoua"><img src="images/GitHub-Mark.png" height="25" /></a>
+                <a href="https://www.linkedin.com/in/yilika-loufoua/"><img src="images/linkedin-3-xxl.png"
+                        height="20" /></a>
+                <a href="https://www.facebook.com/profile.php?id=100000640380242"><img src="images/facebook.png"
+                        height="20" /></a>
+                <a href="https://twitter.com/YLoufoua"><img src="images/twitter.png" height="20" /></a>
+                <a href="https://www.instagram.com/yilikaloufoua/?hl=en"><img src="images/instagram.png"
+                        height="20" /></a>
             </div>
             <p>yilikaloufoua@gmail.com</p>
             <div id="scrollToTopBtn">Back to Top</div>
         </div>
         <script src="script.js"></script>
-    </body>
-</html>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+            }
+        </script>
 
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+
+</html>
