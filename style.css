@@ -13,6 +13,10 @@ h1 {
     color: rgb(13, 82, 157);
 }
 
+#chinese-name {
+    font-family: 'Noto Serif SC', serif;
+}
+
 p {
     font-size: 24px;
 }
@@ -29,17 +33,19 @@ a h3 {
 a p {
     font-size: 1rem;
 }
+
 .section {
     padding: 2rem;
     text-align: center;
 }
 
 #nav-bar {
-    height: 4rem;
     display: flex;
-    justify-content: space-evenly;
+    height: 4rem;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 20%;
 }
 
 #nav-bar a {
@@ -49,6 +55,22 @@ a p {
     font-weight: 600;
     transition: all 0.3s ease;
 }
+
+@media only screen and (max-width: 900px) {
+    #nav-bar {
+        padding: 0 30% 0 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #nav-bar {
+            padding: 0 40% 0 5%;
+        }
+    #nav-bar a{
+        font-size: 16px;
+    }
+}
+
 
 #nav-bar a:hover {
     color: rgb(13, 82, 157);
