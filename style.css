@@ -60,10 +60,27 @@ a p {
 
 @media screen and (max-width: 600px) {
     #nav-bar {
-            padding: 0 40% 0 5%;
-        }
-    #nav-bar a{
+        padding: 0 40% 0 5%;
+    }
+
+    #nav-bar a {
         font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #nav-bar {
+        padding: 0 45% 0 5%;
+    }
+
+    #nav-bar a {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #nav-bar {
+        padding: 0 47% 0 2%;
     }
 }
 
@@ -88,24 +105,51 @@ a p {
     align-items: center;
 }
 
+#header .info .names span {
+    color: rgb(13, 82, 157);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+#header .info .names #break {
+    display: none;
+}
+
+#congolese-name {
+    margin: auto;
+}
+
+#chinese-name {
+    margin: 20px;
+    font-family: 'Noto Serif SC', serif;
+}
+
 #header .info p {
     color: gray;
     font-weight: 100;
-    padding-bottom: 40px;
+    padding: 20px 0 30px;
+}
+
+@media screen and (max-width: 730px) {
+    #header .info .names #break {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #header .info .titles {
+        width: 400px;
+    }
+
+    #header .info p {
+        font-size: 16px;
+    }
 }
 
 #header img {
     width: 300px;
     height: auto;
     border-radius: 30px;
-}
-
-#chinese-name {
-    font-family: 'Noto Serif SC', serif;
-}
-
-#congolese-name {
-    margin: 0 1.5rem;
 }
 
 #about {
@@ -140,15 +184,18 @@ a p {
 }
 
 #project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-items: center;
+    padding-inline: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
 }
 
 
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
     border: 0.1px solid rgba(0, 0, 0, 0.10);
     padding: 20px;
@@ -211,7 +258,7 @@ a p {
     right: 15px;
 }
 
-#google_translate_element .goog-te-menu-value{
+#google_translate_element .goog-te-menu-value {
     font-size: 12px;
 }
 
